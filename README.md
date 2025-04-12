@@ -30,3 +30,20 @@ Open the local server using this uri [http://localhost:3000](http://localhost:30
 - Header
 - Box
 
+
+### Supabase
+Generating types using Supabase CLI
+
+```bash
+npm i supabase@">=1.8.1" --save-dev
+```
+
+Login:
+```bash
+npx supabase login
+```
+
+Generate file:
+```bash
+npx supabase gen types typescript --project-id "$PROJECT_REF" --schema public > database.types.ts
+```
