@@ -23,4 +23,7 @@ const SupabaseProvider: React.FC<SupabaseProviderProps> = ({
 }
 
 export default SupabaseProvider;
-// This component is a wrapper for the Supabase client and provides session context to its children. It uses the `createClientComponentClient` function from the `@supabase/auth-helpers-nextjs` package to create a Supabase client instance and passes it to the `SessionContextProvider` component. The `useState` hook is used to ensure that the Supabase client is only created once when the component mounts.
+// This component is a wrapper for the Supabase client and provides session context to its children. 
+// It uses the `createClientComponentClient` function to create a Supabase client instance 
+// and passes it to the `SessionContextProvider` component. 
+// The `useState` hook is used to ensure that the Supabase client is only created once when the component mounts.
